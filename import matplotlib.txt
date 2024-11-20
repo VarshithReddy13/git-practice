@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+
+# Data collected from your simulation runs
+nodes = [2, 3, 4, 5, 6]
+collision_probs = [0.560736, 0.869152, 0.922449, 0.933376, 0.944798]  # Replace with your actual results
+
+# Plotting
+plt.figure(figsize=(8, 5))
+plt.plot(nodes, collision_probs, marker='o', linestyle='-', color='b', label='Average Collision Probability')
+plt.xlabel('Number of Nodes')
+plt.ylabel('Average Collision Probability')
+plt.title('Average Collision Probability vs Number of Nodes in CSMA/CD Network')
+plt.grid(True)
+plt.legend()
+plt.show()
